@@ -1,0 +1,101 @@
+/* ─────────── PALETA ─────────── */
+/* Usamos tu paleta: #000, #E50914, #333, #FFF */
+:root {
+    --bg: #000000;
+    --primary: #E50914;
+    --dark: #333333;
+    --text: #FFFFFF;
+}
+
+/* index.css */
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at top, #111 0%, #000 60%);
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.home-page {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 35px 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 30px rgba(229, 9, 20, 0.6);
+    max-width: 650px;
+    width: 90%;
+    text-align: center;
+    border: 1px solid #333;
+}
+
+/* Títulos */
+.home-page h1 {
+    font-size: 2.4rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #E50914;
+    margin-bottom: 8px;
+}
+
+.home-page h2 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #FFF;
+}
+
+.home-page h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #E50914;
+}
+
+/* Texto */
+.home-page p {
+    margin-bottom: 6px;
+    color: #DDD;
+}
+
+/* Lista de secciones */
+.home-page ul {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+}
+
+.home-page li {
+    background: #111;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    transition: transform 0.15s, box-shadow 0.15s, border 0.15s;
+}
+
+.home-page li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    border-color: #E50914;
+}
+
+.home-page a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.home-page a:hover {
+    color: #E50914;
+}

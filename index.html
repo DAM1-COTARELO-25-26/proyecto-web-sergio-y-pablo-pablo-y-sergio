@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+<link rel="stylesheet" href="index.css">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +9,49 @@
   <title>NextLevel - Grupo 9</title>
 </head>
 <body>
-  <main>
-    <h1>NextLevel</h1>
-    <h2>Proyecto Web · 1º DAM</h2>
-    <p>Grupo 9 – Compuesto por Sergio González y Pablo Acuña</p>
-    <p>IES Armando Cotarelo Valledor · Lenguajes de Marcas</p>
+  <main class="home-page">
+  <section class="hero">
+    <span class="hero-badge">Proyecto Web · 1º DAM</span>
+    <h1 class="hero-title">NextLevel</h1>
+    <p class="hero-subtitle">Catálogo GTA y contenido para fans</p>
 
-    <h3>Secciones del sitio</h3>
-    <ul>
-      <li><a href="productos.html">Productos</a></li>
-      <li><a href="noticias.html">Noticias</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="sobre.html">Sobre nosotros</a></li>
-      <li><a href="carrito.html">Carrito</a></li>
+    <div class="hero-meta">
+      <p>Grupo 9 – Sergio González y Pablo Acuña</p>
+      <p>IES Armando Cotarelo Valledor · Lenguajes de Marcas</p>
+    </div>
+
+    <div class="hero-actions">
+      <a href="./Secciones/productos.html" class="btn">Ver productos</a>
+      <a href="./Secciones/noticias.html" class="btn btn-outline">Últimas noticias</a>
+    </div>
+  </section>
+
+  <section class="section-box">
+    <h2 class="section-title">Explora el sitio</h2>
+    <ul class="link-grid">
+      <li class="link-card">
+        <a href="./Secciones/productos.html">Productos</a>
+        <span>Catálogo completo de juegos GTA</span>
+      </li>
+      <li class="link-card">
+        <a href="./Secciones/noticias.html">Noticias</a>
+        <span>Actualizaciones, guías y curiosidades</span>
+      </li>
+      <li class="link-card">
+        <a href="./Secciones/contacto.html">Contacto</a>
+        <span>Envíanos tus dudas o sugerencias</span>
+      </li>
+      <li class="link-card">
+        <a href="./Secciones/sobre.html">Sobre nosotros</a>
+        <span>Conoce el equipo y la misión</span>
+      </li>
+      <li class="link-card">
+        <a href="./Secciones/carrito.html">Carrito</a>
+        <span>Resumen de tu compra</span>
+      </li>
     </ul>
+  </section>
+</main>
 
-  </main>
 </body>
 </html>
