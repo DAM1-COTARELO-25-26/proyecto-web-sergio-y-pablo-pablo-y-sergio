@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:annotation>
+        <xs:documentation>
+            Schema de validación para el catálogo de videojuegos NextLevel.
+            Incluye restricciones numéricas, de formato y enumeraciones.
+        </xs:documentation>
+    </xs:annotation>
+
+    <!-- ================= TIPOS PERSONALIZADOS ================= -->
+
+    <xs:simpleType name="anioType">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1970"/>
+            <xs:maxInclusive value="2035"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="precioType">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"/>
+            <xs:maxInclusive value="200"/>
+            <xs:fractionDigits value="2"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="stockType">
+        <xs:restriction base="xs:positiveInteger">
+            <xs:maxInclusive value="9999"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="formatoType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Digital"/>
+            <xs:enumeration value="Fisico"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <!-- ================= ELEMENTO RAÍZ ================= -->
+
+    <xs:element name="catalogo">
+        <xs:complexType>
+            <xs:sequence>
+
+                <xs:element name="tienda">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="descripcion" type="xs:string"/>
+                            <xs:element name="fechaActualizacion" type="xs:date"/>
+                        </xs:sequence>
+                        <xs:attribute name="nombre" type="xs:string" use="required"/>
+                        <xs:attribute name="activa" type="xs:boolean" use="required"/>
+                    </xs:complexType>
+                </xs:element>
+
+                <xs:element name="juegos">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="juego" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+
+                                        <xs:element name="titulo">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:minLength value="3"/>
+                                                    <xs:maxLength value="120"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+
+                                        <xs:element name="anioLanzamiento" type="anioType"/>
+                                        <xs:element name="precio" type="precioType"/>
+
+                                        <xs:element name="formato"
+                                                    type="formatoType"
+                                                    minOccurs="1"
+                                                    maxOccurs="2"/>
+
+                                        <xs:element name="plataformas">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="plataforma"
+                                                                type="xs:string"
+                                                                minOccurs="1"
+                                                                maxOccurs="unbounded"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+
+                                        <xs:element name="stock" type="stockType"/>
+                                        <xs:element name="fechaRegistro" type="xs:date"/>
+
+                                    </xs:sequence>
+
+                                    <xs:attribute name="id" use="required">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value="J[0-9]{3}"/>
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+
+                                    <xs:attribute name="destacado" type="xs:boolean" use="required"/>
+                                    <xs:attribute name="disponible" type="xs:boolean" use="required"/>
+
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

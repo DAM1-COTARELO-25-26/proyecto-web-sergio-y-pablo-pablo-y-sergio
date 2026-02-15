@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo SYSTEM "catalogo-juegos.dtd">
+
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="catalogo-juegos.xsd">
+
+    <!-- Catálogo real de videojuegos conocidos -->
+
+    <tienda nombre="NextLevel" activa="true">
+        <descripcion>Tienda especializada en videojuegos actuales y clásicos</descripcion>
+        <fechaActualizacion>2026-02-15</fechaActualizacion>
+    </tienda>
+
+    <juegos>
+
+        <!-- ===== GTA ===== -->
+        <juego id="J001" destacado="false" disponible="true">
+            <titulo>Grand Theft Auto</titulo>
+            <anioLanzamiento>1997</anioLanzamiento>
+            <precio moneda="EUR">9.99</precio>
+            <formato>Digital</formato>
+            <formato>Fisico</formato>
+            <plataformas>
+                <plataforma>PC</plataforma>
+                <plataforma>PlayStation</plataforma>
+            </plataformas>
+            <stock>50</stock>
+            <fechaRegistro>1997-10-01</fechaRegistro>
+        </juego>
+
+        <juego id="J002" destacado="true" disponible="true">
+            <titulo>Grand Theft Auto: San Andreas</titulo>
+            <anioLanzamiento>2004</anioLanzamiento>
+            <precio moneda="EUR">19.99</precio>
+            <formato>Digital</formato>
+            <formato>Fisico</formato>
+            <plataformas>
+                <plataforma>PC</plataforma>
+                <plataforma>PS2</plataforma>
+                <plataforma>Xbox</plataforma>
+            </plataformas>
+            <stock>35</stock>
+            <fechaRegistro>2004-10-26</fechaRegistro>
+        </juego>
+
+        <juego id="J003" destacado="true" disponible="true">
+            <titulo>Grand Theft Auto V</titulo>
+            <anioLanzamiento>2013</anioLanzamiento>
+            <precio moneda="EUR">29.99</precio>
+            <formato>Digital</formato>
+            <formato>Fisico</formato>
+            <plataformas>
+                <plataforma>PC</plataforma>
+                <plataforma>PS5</plataforma>
+                <plataforma>Xbox Series X</plataforma>
+            </plataformas>
+            <stock>60</stock>
+            <fechaRegistro>2013-09-17</fechaRegistro>
+        </juego>
+
+        <!-- ===== Zelda ===== -->
+        <juego id="J004" destacado="true" disponible="true">
+            <titulo>The Legend of Zelda: Ocarina of Time</titulo>
+            <anioLanzamiento>1998</anioLanzamiento>
+            <precio moneda="EUR">49.99</precio>
+            <formato>Fisico</formato>
+            <plataformas>
+                <plataforma>Nintendo 64</plataforma>
+            </plataformas>
+            <stock>12</stock>
+            <fechaRegistro>1998-11-21</fechaRegistro>
+        </juego>
+
+        <juego id="J005" destacado="true" disponible="true">
+            <titulo>The Legend of Zelda: Breath of the Wild</titulo>
+            <anioLanzamiento>2017</anioLanzamiento>
+            <precio moneda="EUR">59.99</precio>
+            <formato>Digital</formato>
+            <formato>Fisico</formato>
+            <plataformas>
+                <plataforma>Switch</plataforma>
+            </plataformas>
+            <stock>40</stock>
+            <fechaRegistro>2017-03-03</fechaRegistro>
+        </juego>
+
+        <!-- ===== Mario ===== -->
+        <juego id="J006" destacado="true" disponible="true">
+            <titulo>Super Mario Odyssey</titulo>
+            <anioLanzamiento>2017</anioLanzamiento>
+            <precio moneda="EUR">59.99</precio>
+            <formato>Digital</formato>
+            <formato>Fisico</formato>
+            <plataformas>
+                <plataforma>Switch</plataforma>
+            </plataformas>
+            <stock>55</stock>
+            <fechaRegistro>2017-10-27</fechaRegistro>
+        </juego>
+
+        <!-- ===== The Witcher ===== -->
+        <juego id="J007" destacado="true" disponible="true">
+            <titulo>The Witcher 3: Wild Hunt</titulo>
+            <anioLanzamiento>2015</anioLanzamiento>
+            <precio moneda="EUR">29.99</precio>
+            <formato>Digital</formato>
+            <plataformas>
+                <plataforma>PC</plataforma>
+                <plataforma>PS5</plataforma>
+            </plataformas>
+            <stock>32</stock>
+            <fechaRegistro>2015-05-19</fechaRegistro>
+        </juego>
+
+        <!-- ===== Halo ===== -->
+        <juego id="J008" destacado="false" disponible="true">
+            <titulo>Halo: Combat Evolved</titulo>
+            <anioLanzamiento>2001</anioLanzamiento>
+            <precio moneda="EUR">19.99</precio>
+            <formato>Fisico</formato>
+            <plataformas>
+                <plataforma>Xbox</plataforma>
+            </plataformas>
+            <stock>14</stock>
+            <fechaRegistro>2001-11-15</fechaRegistro>
+        </juego>
+
+        <!-- ===== Red Dead ===== -->
+        <juego id="J009" destacado="true" disponible="true">
+            <titulo>Red Dead Redemption 2</titulo>
+            <anioLanzamiento>2018</anioLanzamiento>
+            <precio moneda="EUR">39.99</precio>
+            <formato>Digital</formato>
+            <plataformas>
+                <plataforma>PC</plataforma>
+                <plataforma>PS5</plataforma>
+            </plataformas>
+            <stock>28</stock>
+            <fechaRegistro>2018-10-26</fechaRegistro>
+        </juego>
+
+        <!-- ===== Final Fantasy ===== -->
+        <juego id="J010" destacado="true" disponible="true">
+            <titulo>Final Fantasy VII Remake</titulo>
+            <anioLanzamiento>2020</anioLanzamiento>
+            <precio moneda="EUR">49.99</precio>
+            <formato>Digital</formato>
+            <formato>Fisico</formato>
+            <plataformas>
+                <plataforma>PS5</plataforma>
+            </plataformas>
+            <stock>26</stock>
+            <fechaRegistro>2020-04-10</fechaRegistro>
+        </juego>
+
+        <!-- 10 más conocidos -->
+
+        <juego id="J011" destacado="true" disponible="true">
+            <titulo>Minecraft</titulo>
+            <anioLanzamiento>2011</anioLanzamiento>
+            <precio moneda="EUR">29.99</precio>
+            <formato>Digital</formato>
+            <plataformas>
+                <plataforma>PC</plataforma>
+            </plataformas>
+            <stock>120</stock>
+            <fechaRegistro>2011-11-18</fechaRegistro>
+        </juego>
+
+        <juego id="J012" destacado="true" disponible="true">
+            <titulo>Fortnite</titulo>
+            <anioLanzamiento>2017</anioLanzamiento>
+            <precio moneda="EUR">0.00</precio>
+            <formato>Digital</formato>
+            <plataformas>
+                <plataforma>PC</plataforma>
+            </plataformas>
+            <stock>999</stock>
+            <fechaRegistro>2017-07-25</fechaRegistro>
+        </juego>
+
+        <juego id="J013" destacado="true" disponible="true">
+            <titulo>God of War</titulo>
+            <anioLanzamiento>2018</anioLanzamiento>
+            <precio moneda="EUR">39.99</precio>
+            <formato>Digital</formato>
+            <plataformas>
+                <plataforma>PS5</plataforma>
+            </plataformas>
+            <stock>22</stock>
+            <fechaRegistro>2018-04-20</fechaRegistro>
+        </juego>
+
+        <juego id="J014" destacado="true" disponible="true">
+            <titulo>Elden Ring</titulo>
+            <anioLanzamiento>2022</anioLanzamiento>
+            <precio moneda="EUR">59.99</precio>
+            <formato>Digital</formato>
+            <plataformas>
+                <plataforma>PC</plataforma>
+            </plataformas>
+            <stock>31</stock>
+            <fechaRegistro>2022-02-25</fechaRegistro>
+        </juego>
+
+        <juego id="J015" destacado="true" disponible="true">
+            <titulo>Cyberpunk 2077</titulo>
+            <anioLanzamiento>2020</anioLanzamiento>
+            <precio moneda="EUR">29.99</precio>
+            <formato>Digital</formato>
+            <plataformas>
+                <plataforma>PC</plataforma>
+            </plataformas>
+            <stock>18</stock>
+            <fechaRegistro>2020-12-10</fechaRegistro>
+        </juego>
+
+        <juego id="J016" destacado="false" disponible="true">
+            <titulo>Assassin's Creed Valhalla</titulo>
+            <anioLanzamiento>2020</anioLanzamiento>
+            <precio moneda="EUR">34.99</precio>
+            <formato>Digital</formato>
+            <plataformas>
+                <plataforma>PC</plataforma>
+            </plataformas>
+            <stock>16</stock>
+            <fechaRegistro>2020-11-10</fechaRegistro>
+        </juego>
+
+        <juego id="J017" destacado="true" disponible="true">
+            <titulo>Call of Duty: Modern Warfare II</titulo>
+            <anioLanzamiento>2022</anioLanzamiento>
+            <precio moneda="EUR">69.99</precio>
+            <formato>Digital</formato>
+            <plataformas>
+                <plataforma>PC</plataforma>
+            </plataformas>
+            <stock>45</stock>
+            <fechaRegistro>2022-10-28</fechaRegistro>
+        </juego>
+
+        <juego id="J018" destacado="true" disponible="true">
+            <titulo>FIFA 23</titulo>
+            <anioLanzamiento>2022</anioLanzamiento>
+            <precio moneda="EUR">49.99</precio>
+            <formato>Fisico</formato>
+            <plataformas>
+                <plataforma>PS5</plataforma>
+            </plataformas>
+            <stock>38</stock>
+            <fechaRegistro>2022-09-30</fechaRegistro>
+        </juego>
+
+        <juego id="J019" destacado="true" disponible="true">
+            <titulo>Resident Evil 4 Remake</titulo>
+            <anioLanzamiento>2023</anioLanzamiento>
+            <precio moneda="EUR">59.99</precio>
+            <formato>Digital</formato>
+            <plataformas>
+                <plataforma>PS5</plataforma>
+            </plataformas>
+            <stock>24</stock>
+            <fechaRegistro>2023-03-24</fechaRegistro>
+        </juego>
+
+        <juego id="J020" destacado="true" disponible="false">
+            <titulo>Starfield</titulo>
+            <anioLanzamiento>2023</anioLanzamiento>
+            <precio moneda="EUR">69.99</precio>
+            <formato>Digital</formato>
+            <plataformas>
+                <plataforma>PC</plataforma>
+            </plataformas>
+            <stock>0</stock>
+            <fechaRegistro>2023-09-06</fechaRegistro>
+        </juego>
+
+    </juegos>
+
+</catalogo>

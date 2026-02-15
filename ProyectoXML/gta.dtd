@@ -1,0 +1,35 @@
+<!ELEMENT catalogo (tienda, juegos)>
+
+<!ELEMENT tienda (descripcion, fechaActualizacion)>
+<!ATTLIST tienda
+    nombre CDATA #REQUIRED
+    activa (true|false) #REQUIRED
+>
+
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT fechaActualizacion (#PCDATA)>
+
+<!ELEMENT juegos (juego+)>
+
+<!ELEMENT juego (titulo, anioLanzamiento, precio, formato+, plataformas, stock, fechaRegistro)>
+<!ATTLIST juego
+    id ID #REQUIRED
+    destacado (true|false) #REQUIRED
+    disponible (true|false) #REQUIRED
+>
+
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT anioLanzamiento (#PCDATA)>
+
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio
+    moneda CDATA #FIXED "EUR"
+>
+
+<!ELEMENT formato (#PCDATA)>
+
+<!ELEMENT plataformas (plataforma+)>
+<!ELEMENT plataforma (#PCDATA)>
+
+<!ELEMENT stock (#PCDATA)>
+<!ELEMENT fechaRegistro (#PCDATA)>
