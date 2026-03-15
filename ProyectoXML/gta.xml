@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE catalogo SYSTEM "catalogo-juegos.dtd">
-
-<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-          xsi:noNamespaceSchemaLocation="catalogo-juegos.xsd">
-
+<catalogo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <!-- Catálogo real de videojuegos conocidos -->
 
     <tienda nombre="NextLevel" activa="true">
